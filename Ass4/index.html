@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel = "stylesheet" href = "index.css"></link>
+	</head>
+	<body>
+	<script>
+	function validateForm(){
+	if(!form1.email.value.includes("@") || !form1.email.value.includes(".")){
+		form1.email.setCustomValidity("Please enter valid email")
+		return false;
+	}
+	alert("Form submitted successfully")
+	return true;
+		
+	}
+</script>
+		<form name = "form1" onSubmit = "return validateForm()" >
+		<center>
+		<h2>Registration Form</h2>
+		<br>
+		<br>
+		<label for = "firstName">First Name:</label>
+		<input name = "firstName" type= "text" autocomplete = "on" required></input>
+		<br>
+		<br>
+		<label for = "middleName">Middle Name:</label>
+		<input name = "middleName" type= "text" required></input>
+		<br>
+		<br>
+		<label for = "lastName">Last Name:</label>
+		<input name = "lastName" type= "text" required ></input>
+		<br>
+		<br>
+		<label for = "email">EmailId:</label>
+		<input name = "email" type= "text" required </input>
+		<br>
+		<br>
+		<label for = "phoneNo">Phone Number:</label>
+		<input name = "phoneNo" type= "digits" required></input>
+		<br>
+		<br>
+		<label for = "address">Address:</label>
+		<input name = "address" type= "text" required></input>
+		<br>
+		<br>
+		<br>
+		<button>Submit</button>
+		</center>
+		</form>
+	</body
+</html>
